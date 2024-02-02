@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi DImensional Array</title>
+</head>
+
+<body>
+    <script>
+        let arr = [
+            ["Niraj", 18, "Male", "B.Com"],
+            ["Rajesh", 19, "Male", "B.Tech"],
+            ["Ravi", 20, "Male", "BCA"],
+            ["Rani", 21, "Female", "BSc.it"]
+        ]
+
+        document.write("<table border='1px' cellspacing='0'>")
+        for(let i=0; i<arr.length; i++){
+            document.write("<tr>");
+            for(let j=0; j<arr[i].length; j++){
+                document.write("<td>"+ arr[i][j]+ "</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>")
+    </script>
+</body>
+
+</html>
