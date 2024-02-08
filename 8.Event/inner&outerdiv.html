@@ -1,0 +1,46 @@
+<!--CSS - Make Inner DIV center inside Outer DIV.-->
+<html>
+
+<head>
+    <title>CSS - Make Inner DIV center inside Outer DIV.</title>
+    <!--Example CSS-->
+    <style>
+        .outerDiv {
+            background-color: #006699;
+            color: #fff;
+            height: 200px;
+            width: 200px;
+            margin: 0px auto;
+        }
+
+        .innerDiv {
+            background-color: #efefef;
+            color: #000;
+            height: 150px;
+            width: 150px;
+            margin: 0px auto;
+        }
+    </style>
+</head>
+
+<body style="text-align: center;">
+    <h1>CSS - Make Inner DIV center inside Outer DIV.</h1>
+    <div class="outerDiv">
+        This is Outer DIV.
+        <div class="innerDiv">
+            This is Innder DIV.
+        </div>
+    </div>
+        <!-- Javascript --> 
+    <script>
+        document.querySelector("#inner").addEventListener('click', function(){
+            alert("Inner Div");
+        },true);
+
+        document.querySelector("#outer").addEventListener('click', function(){
+            alert("Outer Div");
+        },true);
+    </script>
+</body>
+
+</html>
