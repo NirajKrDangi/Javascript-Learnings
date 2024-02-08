@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Events on Javascript -->
+    <title>OnClick() Event</title>
+    <style>
+        h3, button{
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        function greet() {
+            document.write("Hello Niraj!🙋‍♀️ How are Your");
+        }
+    </script>
+</head>
+<body onresize="greet()"> 
+    <!-- click=> onclick(): When mouse click on an element -->
+    <h3>Onclick(): </h3>
+    <button onclick="greet()">Click</button>
+
+
+    <!-- Double Click=> ondblclick(): When mouse double click on an element -->
+    <h3>Ondblclick(): </h3>
+    <button ondblclick="greet()">Double click</button>
+
+
+    <!-- Right Click=> oncontextmenu(): When mouse right click on an element -->
+    <h3>Oncontextmenu(): </h3>
+    <button oncontextmenu="greet()">Right click</button>
+
+
+    <!-- mouseover=> onmouseover: When the cursor of the mouse comes over the element -->
+    <h3>Onmouseover(): </h3>
+    <button onmouseover="greet()">Hover Me</button>
+
+
+    <!-- mouseout=> onmouseout(): When the cursor of the mouse leaves an element -->
+    <h3>Onmouseout(): </h3>
+    <button onmouseout="greet()">Move Out on Me</button>
+
+
+    <!-- mousedown=> onmousedown(): When the mouse button is pressed over the element -->
+    <h3>Onmousedown(): </h3>
+    <button onmousedown="greet()">Click on Me</button>
+
+
+    <!-- keypress=> onkeypress(): When press any key on keyboard, this event only work with form and body tags -->
+    <h3>Onkeypress(): </h3>
+    <button  onkeypress="greet()">Press any key</button>
+
+
+    <!-- resize window=> onresize(): When resize the window -->
+    <h3>Onresize(): </h3>
+    <button>Resize Windows</button>
+
+
+    <!-- scroll window=> onscroll(): When scroll the window -->
+
+</body>
+</html>
