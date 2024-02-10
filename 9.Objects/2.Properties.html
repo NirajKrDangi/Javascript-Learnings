@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects Method</title>
+</head>
+
+<body>
+    <script>
+        // create object
+
+        var personDetails = {
+            firstName: "Niraj Kumar",
+            lastName: "Dangi",
+            class: "BSC-IT",
+            age: 21,
+        }
+
+        
+        //==> adding new properties in object
+        personDetails.fatherName = "Shambhu Dangi";   
+        // update properties in object
+        personDetails.age = 25;  
+        // delete properties in object
+        delete personDetails.lastName;  
+        // print object
+        document.write(personDetails); 
+        
+
+        //==> Nested objects
+        var personDetails1 = {
+            firstName: "Niraj Kumar",
+            lastName: "Dangi",
+            cars: {
+                model: "BMW-07",
+                year: 2022,
+            }
+        }        
+        // document.write(personDetails1.cars);
+
+
+        //==> Nested Array and Objects
+        var myObj = {
+            name: "Niraj Kumar",
+            age: 20,
+            cars: [
+                {name: "BMW", model: ["S23", "Z21", "F23"]},
+                {name: "Thar", model: ["S23", "Z21", "F23"]},
+                {name: "Bareza", model: ["S23", "Z21", "F23"]}
+            ]
+        }
+        let txt = "";
+        for (let key in myObj) {
+            txt += myObj[key] + " ";
+        }
+        document.write(txt);
+
+
+        //==> Displaying the Object in a Loop
+        // var myObj = {
+        //     name: "Niraj Kumar",
+        //     age: 20,
+        //     cars: "BMW" 
+        // }
+        // let txt = "";
+        // for (let key in myObj) {
+        //     txt += myObj[key] + " ";
+        // }
+        // document.write(txt);
+
+    </script>
+    <!-- see output on the browser console -->
+</body>
+</html> 
