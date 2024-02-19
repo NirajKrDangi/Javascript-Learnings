@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: tahoma;
+            background:url("wallpaper.jpg");
+            background-size:cover;
+            /* back ground-repeat: no-repeat; */
+        }
+
+        #form{
+            width: 250px;
+            margin: 100px auto 0 auto;
+            border: 2px solid #000;
+            border-radius: 15px;
+            padding: 25px;
+            background-color: rgb(0, 0, 0, .5);
+            color: #fff;
+            box-shadow: -2px 2px 15px #000;
+        }
+        p,input{
+            font-size: 20px;
+        }
+        input {
+            width: 240px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding: 8px;
+            background-color: #fff;
+            box-shadow: inset -2px 2px 10px #000;
+        }
+        #submitBtn{
+            width: 256px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form" name="myForm" onsubmit="return ValidateForm()">
+        <p>Name:</p> <input type="text" name="userName">
+        <p></p>
+        <br><br>
+        <p>Class: </p><input type="text" name="userClass">
+        <br><br>
+        <p>Address: </p><input type="text" name="userAddress">
+        <br><br>
+        <input id="submitBtn" type="submit" value="submit">
+    </form>
+
+    <script>
+        function ValidateForm(){
+            var x = document.forms["myForm"]["userName"].value;
+            if(x == ""){
+                alert("Please Enter your Full-Name");
+                return false;
+            }
+            var y = document.forms["myForm"]["userClass"].value;
+            if(y != Number){
+                alert("Enter valid Class, eg-9");
+            }
+        }
+    </script>
+</body>
+</html>
