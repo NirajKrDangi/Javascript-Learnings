@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Event</title>
+</head>
+<body>
+    <h1 id="setTimer">Set Timer</h1>
+    <button id="startBtn" type="button">Start Timer</button>
+    <button id="stopBtn" type="button">Stop Timer</button>
+
+    <!-- Javascript -->
+    <script>
+        let targetBtn1 = document.querySelector('#startBtn');
+        let targetBtn2 = document.querySelector('#stopBtn');
+        let setTimer = document.querySelector('#setTimer');
+        let num = 0;
+        let clearTimer;
+
+        targetBtn1.addEventListener('click', start);
+        targetBtn2.addEventListener('click', stop);
+       
+        function start(){
+            setTimer.innerHTML = "Loading Data....";
+            clearTimer = setInterval(function(){
+                setTimer.innerHTML = `Your Time Start Now ${num}`;
+                num++
+            }, 1000)
+        }
+
+        function stop(){
+            clearInterval(clearTimer);
+            setTimer.innerHTML = 'Timer Stopped!';
+        }
+    </script>
+</body>
+</html>
