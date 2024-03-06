@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Operator</title>
+</head>
+<body>
+    <script>
+        function myBioData(name, degree, ...args){
+            
+            document.write(`Hello <b>"${name}"</b> Your degree <b>"${degree}"</b> and Your Total Marks = `);
+            
+            let sum=0;
+            args.forEach(i=>{sum+=i})
+            document.write(`<b>${sum}</b>`)
+
+            document.write(" || Array of Rest Operator ["+ args +"]");
+
+            document.write(" || Rest Operator or ...args Length = "+ args.length + "</br></br>")
+
+
+    
+        }
+        myBioData("Niraj", "BCA", 10, 20, 30, 40);
+        myBioData("Roushan", "BSC-IT", 10, 30, 40);
+        myBioData("Goutam", "IIT", 20, 30, 40);
+
+    </script>
+</body>
+</html>
