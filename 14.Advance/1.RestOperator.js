@@ -14,29 +14,29 @@ sum(5, 5);  // 10
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 /*** Rest Operator: It allows you to gather multiple arguments into a single array */
 
-// function sum(name, ...args) {
-//     console.log(`Hello ${name}: `);
-//     let sum = 0;
-//     for(let i in args){
-//         sum = sum + args[i];
-//     }
-//     console.log(sum);
-// }
-// sum("Niraj", 10, 20, 30);
-// // output: Hello Niraj 
+function sum(name, ...args) {
+    console.log(`Hello ${name}: `);
+    let sum = 0;
+    for(let i in args){
+        sum = sum + args[i];
+    }
+    console.log(sum);
+}
+sum("Niraj", 10, 20, 30);
+// output: Hello Niraj 
 
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 /*** convert function arguments to an array */
 
-// function myName() {
-//     let Name = array.from(arguments);
-//     for(let i in Name){
-//         console.log(Name);  
-//     }
-// } 
+function myName() {
+    let Name = array.from(arguments);
+    for(let i in Name){
+        console.log(Name);  
+    }
+} 
 
-// myName("Niraj");
+myName("Niraj");
 
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
