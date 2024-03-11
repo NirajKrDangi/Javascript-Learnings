@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Stack & Execution Context</title>
+</head>
+
+<body>
+    <script>
+        var globalContextExecution = "windows";
+
+        function a() {
+            console.log("fa");
+            debugger;
+            b();
+            console.log("Let See when i will be console");
+        }
+
+        function b() {
+            debugger;
+            console.log("2nd function");
+            c();
+        }
+
+        function c() {
+            debugger;
+            console.log("3rd function");
+        }
+
+        debugger;
+
+        a();    // call function a();
+    </script>
+</body>
+
+</html>
